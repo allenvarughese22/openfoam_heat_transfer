@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1906                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1906 OPENFOAM=1906
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jun 20 2020
+Time   : 11:59:15
+Host   : LAPTOP-ODVE2UUP
+PID    : 1424
+I/O    : uncollated
+Case   : /home/allen/heat_transfer/buoyantSimpleFoam/buoyantCavity
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.001
+    Block 0 cell size :
+        i : 0.00217143 .. 0.00217143
+        j : 0.0145333 .. 0.0145333
+        k : 0.0346667 .. 0.0346667
+
+
+There are no merge patch pairs
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 -0.26) (0.076 2.18 0.26)
+  nPoints: 86976
+  nCells: 78750
+  nFaces: 244275
+  nInternalFaces: 228225
+----------------
+Patches
+----------------
+  patch 0 (start: 228225 size: 1050) name: frontAndBack
+  patch 1 (start: 229275 size: 10500) name: topAndBottom
+  patch 2 (start: 239775 size: 2250) name: hot
+  patch 3 (start: 242025 size: 2250) name: cold
+
+End
+

@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1906                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1906 OPENFOAM=1906
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -latestTime -func sample
+Date   : Jun 20 2020
+Time   : 12:05:09
+Host   : LAPTOP-ODVE2UUP
+PID    : 1467
+I/O    : uncollated
+Case   : /home/allen/heat_transfer/buoyantSimpleFoam/buoyantCavity
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1000
+
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, const vector*, Foam::label, bool, const Foam::string&)
+    in file particle/particle.C at line 483
+    Particle initialised with a location outside of the mesh when tracking from centre (0.00108571 1.09727 0) of cell 39375 to position (0 1.09 0)
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, const vector*, Foam::label, bool, const Foam::string&)
+    in file particle/particle.C at line 483
+    Particle initialised with a location outside of the mesh when tracking from centre (0.00108571 1.31527 0) of cell 39900 to position (0 1.308 -3.46945e-18)
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, const vector*, Foam::label, bool, const Foam::string&)
+    in file particle/particle.C at line 483
+    Particle initialised with a location outside of the mesh when tracking from centre (0.00108571 1.53327 0) of cell 40425 to position (0 1.526 0)
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, const vector*, Foam::label, bool, const Foam::string&)
+    in file particle/particle.C at line 483
+    Particle initialised with a location outside of the mesh when tracking from centre (0.00108571 1.75127 0) of cell 40950 to position (0 1.744 -3.46945e-18)
+Reading set description:
+    y0.1
+    y0.2
+    y0.3
+    y0.4
+    y0.5
+    y0.6
+    y0.7
+    y0.8
+    y0.9
+
+Time = 1000
+
+Reading fields:
+    volScalarField: T
+    volVectorField: U
+
+Executing functionObjects
+
+End
+

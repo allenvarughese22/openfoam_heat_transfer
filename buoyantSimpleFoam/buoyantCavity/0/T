@@ -33,8 +33,8 @@ boundaryField
 
     hot
     {
-        type            fixedValue;
-        value           uniform 307.75; // 34.6 degC
+        type            fixedGradient;
+        gradient        uniform -1e3;
     }
 
     cold
